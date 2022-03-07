@@ -1,0 +1,115 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+	
+    height: 1000px;
+}
+
+.main { 
+    font-size: 1.5em;
+    width: 1536px;
+    
+}
+
+h1, h2, p {
+    color: black;
+    font-family: monospace;
+}
+
+
+
+/***************************** header *****************************/
+.navbar{
+    height: 63px;
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.d-flex{
+    padding-right: 30px;
+}
+.form-control{
+    height: 40px;
+}
+.btn {
+    margin-left: 5px;
+    height: 40px;
+    width: 120px;
+}
+.nav-item{
+    font-size: 19px;
+}
+.d-flex a{
+    text-decoration:none;
+    color: #198754;
+}
+
+
+
+/***************************** site_content *****************************/
+
+.carousel-item img{
+    height: 800;
+}
+
+.row h6{
+    border-top: 1px solid gray;
+    opacity: 0.7;
+     color: gray; 
+     border-bottom:black;
+     font-family: monospace;
+}
+.row h5{
+    font-family: MyFont;
+    font-size: 15px;
+}
+.row p{
+    font-size:13px; 
+    padding-top:5px; 
+    color: gray;
+} 
+
+.icons { 
+    display: flex;
+}
+
+button { 
+    color: black;
+    background: none;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.green-btn:active {
+    color: green;
+    transform: scale(1.2);
+}
+
+.red-btn:active {
+    color: red;
+    transform: scale(1.2);
+}
+
+input { 
+    width: 60px;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 17px;
+    pointer-events: none;
+    margin-left: 4px;
+}
+
+.likes {
+    display: flex;
+}
+
+
+

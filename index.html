@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>KazFootball</title>
+    <style>
+    @font-face {
+    font-family: MyFont; 
+    src: url(assets/font/font6.ttf); 
+    src: local(font6), url(assets/font/font6.ttf); 
+   }
+    </style>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--new-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/avatars/5e/5e71b5626a699307c56d54d2211222d31996fda6.jpg">
+</head>
+<body>
+    <div class="container-fluid" style="background-color: white;">
+        <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">KazFootball</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>   
+              </button>
+              <div class="collapse navbar-collapse bg-dark container-fluid" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Tournament
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="table.html">Table</a></li>
+                      <li><a class="dropdown-item" href="Calendar.html">Calendar</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="about_us.html">About us</a>
+                      </li>
+                  </li>
+                
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><a href="login.html">Log in</a></button>
+                  <button class="btn btn-outline-success" type="submit"><a href="registration.html">Sign in</a></button>
+                 
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>  
+        
+
+
+        <div class = "container">
+                <div class="carousel slide" id="carouselControls" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class = "d-block w-100" src="assets/img/11.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class = "d-block w-100" src="assets/img/12.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class = "d-block w-100" src="assets/img/13.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img class = "d-block w-100" src="assets/img/14.jpg" alt="">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" role="button" href ="#carouselControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>                
+                    </a>
+                    <a class="carousel-control-next" role="button" href ="#carouselControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>                
+                    </a>
+                </div> 
+        </div>
+        
+
+
+
+
+        <div class="container my-2">
+            <div class="row">
+                <div class = "col-md-9">
+
+                    <div class ="row" >
+                        <div class="col">
+                            <div>
+                                <h6>Yesterday 23:56</h6>
+                                <img class ="w-100" src="https://vesti.kz/userdata/news/2022/news_305844/crop_b/photo_172255.jpg.webp" alt="">
+                                <h5>The midfielder of the national team of Kazakhstan joined the composition of "Astana"</h5>
+                                <div class ="row icons" style="padding-top: 65px;" >
+                                    <div class="col-md-1 likes">
+                                       <button id="likebtn1" class="green-btn" > <i class="fa solid fa-thumbs-up"></i> </button>
+                                       <input type="number" id="input1" value="0">
+                                    </div>
+                                    <div class="col-md-1 likes">
+                                        <button id="dislikebtn1" class="red-btn"> <i class="fa solid fa-thumbs-down"></i> </button>
+                                        <input type="number" id="input2" value="0">
+                                    </div>
+                                    <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-7"></div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6>Yesterday 23:32</h6>
+                                <img class ="w-100" src="https://oxy.sports.ru/fetch/?url=https%3A%2F%2Fi.sprts.ru%2Fpreset%2Fwysiwyg%2F3%2F82%2F47c06738811ec8cf6d3b2263ee66e.jpeg" alt="">
+                                <h5>Who is Alip, who was invited to Zenit? At 12 he was left without parents, at 18 he made his debut in the national team, in Kazakhstan he won everything"</h5>
+                                <div class ="row icons" style="padding-top:10px;" >
+                                    <div class="col-md-1 likes">
+                                       <button id="likebtn2" class="green-btn" > <i class="fa solid fa-thumbs-up"></i> </button>
+                                       <input type="number" id="input3" value="0">
+                                    </div>
+                                    <div class="col-md-1 likes">
+                                        <button id="dislikebtn2" class="red-btn"> <i class="fa solid fa-thumbs-down"></i> </button>
+                                        <input type="number" id="input4" value="0">
+                                    </div>
+                                    <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-7"></div>    
+                                </div>
+                        </div>
+                    </div>
+            
+
+            
+                    <div class ="row" >
+                        <div class="col">
+                            <div>
+                                <h6>Yesterday 23:24</h6>
+                                <img class ="w-100" src="https://vesti.kz/userdata/news/2022/news_305843/crop_b/photo_172254.jpg.webp" alt="">
+                                <h5>Football player of Kazakhstan national team will not be in "Kairat"</h5>
+                                <div class ="row icons" style="padding-top:10px;" >
+                                    <div class="col-md-1 likes">
+                                       <button id="likebtn3" class="green-btn" > <i class="fa solid fa-thumbs-up"></i> </button>
+                                       <input type="number" id="input5" value="0">
+                                    </div>
+                                    <div class="col-md-1 likes">
+                                        <button id="dislikebtn3" class="red-btn"> <i class="fa solid fa-thumbs-down"></i> </button>
+                                        <input type="number" id="input6" value="0">
+                                    </div>
+                                    <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-7"></div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6>Yesterday 23:20</h6>
+                                <img class ="w-100" src="https://vesti.kz/userdata/news/2022/news_305834/crop_b/photo_172245.jpg.webp" alt="">
+                                <h5>Nurgaliyev found a new club after leaving Tobol</h5>
+                                <div class ="row icons" style="padding-top:10px;" >
+                                    <div class="col-md-1 likes">
+                                       <button id="likebtn4" class="green-btn" > <i class="fa solid fa-thumbs-up"></i> </button>
+                                       <input type="number" id="input7" value="0">
+                                    </div>
+                                    <div class="col-md-1 likes">
+                                        <button id="dislikebtn4" class="red-btn"> <i class="fa solid fa-thumbs-down"></i> </button>
+                                        <input type="number" id="input8" value="0">
+                                    </div>
+                                    <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-7"></div>    
+                                </div>
+                            </div>
+                    </div>
+            
+
+            
+
+                    <div class ="row" >
+                        <div class="col">
+                            <div>
+                                <h6>Yesterday 23:12</h6>
+                                <img class ="w-100" src="https://vesti.kz/userdata/news/2022/news_305826/crop_b/photo_172232.jpg.webp" alt="">
+                                <h5>Shakhtar went to the first TCB</h5>
+                                <div class ="row icons" style="padding-top:10px;" >
+                                    <div class="col-md-1 likes">
+                                       <button id="likebtn5" class="green-btn" > <i class="fa solid fa-thumbs-up"></i> </button>
+                                       <input type="number" id="input9" value="0">
+                                    </div>
+                                    <div class="col-md-1 likes">
+                                        <button id="dislikebtn5" class="red-btn"> <i class="fa solid fa-thumbs-down"></i> </button>
+                                        <input type="number" id="input10" value="0">
+                                    </div>
+                                    <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-7"></div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h6>Yesterday 22:53</h6>
+                                <img class ="w-100" src="https://vesti.kz/userdata/news/2022/news_305822/crop_b/photo_172229.jpg.webp" alt="">
+                                <h5>Defender of the national team of Kazakhstan held the first training session in the "Zenith"</h5>
+                                <div class ="row icons" style="padding-top:10px;" >
+                                    <div class="col-md-1 likes">
+                                       <button id="likebtn6" class="green-btn" > <i class="fa solid fa-thumbs-up"></i> </button>
+                                       <input type="number" id="input11" value="0">
+                                    </div>
+                                    <div class="col-md-1 likes">
+                                        <button id="dislikebtn6" class="red-btn"> <i class="fa solid fa-thumbs-down"></i> </button>
+                                        <input type="number" id="input12" value="0">
+                                    </div>
+                                    <div class="col-md-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                                        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="col-md-7"></div>    
+                                </div>
+                            </div>
+                        
+                    </div>
+                </div>
+
+
+
+
+                <div class="col">
+                    <div class="row" style="background-color:#c7daf0;padding: 4px;">
+                    <p style="color: black; font-family: MyFont; font-size: 17px;">Popular / Discussed</p></div>
+                    <div class="row" style="background-color:#0c5397;padding: 10px; border-top: 1px solid #000000;">
+                        <div class="col" style="color: black; font-family: MyFont; border-right: 2px solid #000000;">Today</div>
+                        <div class="col" style="color: black; font-family: MyFont; border-right: 2px solid #000000;">Week</div>
+                        <div class="col" style="color: black; font-family: MyFont;">Month</div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">Fire, no words." Kazakh athlete posted a candid video in underwear</p>
+                        <div class="col">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                          </svg> 
+                        </div>
+                        <div class="col-md-10"><p>110</p></div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">The KHL decided to suspend the championship with the participation of "Barys". Details</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>122</p></div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">Kazakh club found a new coach in the KHL</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>655</p></div>
+                    </div>
+
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">WBO postpones bidding for Alimkhanuly's fight with world champion</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>442</p></div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">"I would pose for Playboy." Kazakh volleyball player intrigued by sexy photo</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>4</p></div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">"Everyone knows who the king is." Alimkhanuly made a statement about the fight with the world champion</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>56</p></div>
+                    </div>
+
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">Presented a photo report from the first training session of the champion of Kazakhstan at the TCB</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>546</p></div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">CSKA has signed a contract with Zainutdinov's competitor from the French Championship. Conditions known</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>34</p></div>
+                    </div>
+                    <div class="row" style="background-color: #c7daf0; border-bottom: 1px dotted gray;">
+                        <p style="color: black; font-family: MyFont; font-size: 13px;">Ex-player of "Manchester United" arrived at the training camp of the champion of Kazakhstan</p>
+                        <div class="col">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                              </svg> 
+                            </div>
+                            <div class="col-md-10"><p>123</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</div>
+
+
+    
+
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</div>
+</body>
+</html>
+
+
